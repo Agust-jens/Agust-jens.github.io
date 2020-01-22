@@ -1,0 +1,135 @@
+h1 {
+    border: 3px solid green;
+}
+.bordi{
+    border: 3px solid red;
+    padding: 1em 2em; /*top+bottom og left+right*/
+    color: red;
+    margin-bottom: 1em;
+}
+.blues{
+    color: blue;
+    border: 4px dashed  blue;
+    padding: .5em;
+}
+li {
+    border: 3px dashed green;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.inline li{
+    display: inline;
+    color: red;
+    border: 3px dashed blue;
+}
+.inlineblock li{
+    display: inline-block;
+    border: 3px dashed red;
+    margin: 1em;
+
+}
+* {
+    box-sizing: border-box;
+}
+body {
+	max-width: 60em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+}
+.box {
+    border: 1px solid;
+    padding: 1em;
+    width: 50%;
+    float: left;
+}
+.imgR {
+float:right;
+padding-left: .5em;
+}
+.imgR img{
+    width: 100%;
+    height: auto;
+}
+
+.bigL{
+    float: left;
+    font-size: 3em;
+    padding: 0.24em .4em 0;/*top - right - bottom - left*/
+}
+/*clearfix*/
+.group:before,
+.group:after{
+ content: "";
+ display:table;
+}
+.group::after{
+    clear: both;
+}
+.group {
+    clear: both;
+}
+.box2{
+    border: 1px solid;
+    padding: 1em;
+    width: 100%;
+    float: left;
+}
+.athugid{
+    text-align: center;
+    color: black;
+    background-color: yellow;
+    border: 10px solid yellow;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+	max-width: 60em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+}
+
+footer p {
+  text-align: center;
+}
+.row{
+	display: flex;
+	flex-flow: row-reverse;
+}
+div{
+	flex-grow: 1;
+}
+.column{
+	display: flex;
+	flex-flow: column-reverse;
+}
+.box3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	font-size: 1.2em;
+	height: 5em;
+}
+.gulur {
+	background-color: yellow; 
+}
+.raudur {
+	background-color: red; 
+}
+.graenn {
+	background-color: lime;
+}
+.blar {
+	background-color: cyan; 
+}
+.box3 {
+	font-size: 1.2em;
+	height: 5em;
+}
+
