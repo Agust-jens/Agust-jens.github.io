@@ -1,0 +1,195 @@
+*, *:before, *:after {
+    box-sizing: border-box; 
+  }
+  
+  /* ====== GRID Area ====== */
+  
+  
+  /* ====== GRID Template Areas ===== */
+  
+  
+  /* ====== Base CSS ====== */
+  
+  .body {
+    display: grid;
+    grid-area: body;
+    line-height: 1.5em;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    "topnav"
+  }
+  .topnav {
+      grid-area: topnav;
+  background: #1c2d1c; 
+  }
+  .header {
+      grid-area: header;
+  background: tomato; 
+  }
+  .main {
+      grid-area: main;
+  }
+  .footer {
+      grid-area: footer;
+  background: lightgreen; 
+  }
+  .midja {
+      grid-area: midja;
+  background: skyblue; 
+  }
+  .vinstri {
+      grid-area: vinstri;
+  background: gold; 
+  }
+  .haegri {
+      grid-area: haegri;
+  background: pink; 
+  }
+  
+  .header,
+  .footer,
+  .midja,
+  .vinstri, 
+  .haegri {
+  padding: 1em; 
+  }
+  
+  .header h1 {
+  color: #fff;
+  line-height: 1.2;
+  font-weight: normal;
+  }
+  .midja h2 {
+  margin: .7em 0 .8em 0;
+  }
+  .midja h4 {
+  text-align: justify;
+  margin: .4em 0;
+  }
+  .midja p {
+  text-align: justify;
+  }
+  
+  /* ========================================
+  Efnisyfirlit (mobile)
+  ======================================== */
+  .topnav ul{
+  background: #1c2d1c; 
+  }
+  .topmenu {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+  }
+  .topmenu li {
+  border: 0;
+  border-bottom: 1px solid lime; 
+  padding: 0;
+  margin:0;
+  }
+  .topmenu a {
+  display: block;     /* ath! */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: .4em 1em; 
+  }
+  .topmenu a:hover,
+  .topmenu a:active,
+  .virkur {
+  color: black !important;
+  background-color: lime;
+  }
+  /* =======================================
+     myndvinnsla  
+    ======================================== */
+  
+  /*  hafið myndir <img> alltaf í max-width: 100%; stærð 
+      munið að vinna og þjappa myndir í photoshop ! */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  figure {
+    margin:0;
+  }
+  figure img {
+    display: block;
+    border: 1px solid orange;
+  }
+  
+  
+  /*  ========================================
+  Viðmið - breakpoints 30em = 480px + 
+  ========================================*/
+  @media screen and (min-width:30em){
+  .myndabox {
+    display: grid;
+    grid-template-columns: 162px 162px;
+   
+  }
+}
+  /*  ========================================
+  Viðmið - breakpoints 37.5em = 600px + 
+  ========================================*/
+  @media screen and (min-width:37.5em) {
+    .body {
+        grid-template-areas:
+        "topnav"
+        "header"
+        "main"
+        "footer"
+    }
+    .topmenu {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .main {
+        display: grid;
+        grid-template-areas:
+        "vinstri midja"
+        "haegri midja";
+        grid-auto-columns: 1fr 2fr;
+    }
+  }
+
+  /* ========================================
+  Viðmið - breakpoints 48em = 760px +
+  ======================================== */
+  @media screen and (min-width:48em) {
+    .main {
+      display: grid;
+      grid-template-areas:
+      "vinstri midja haegri";
+      grid-auto-columns: 1fr 2fr 1fr;
+  }
+}
+  
+  /* ========================================
+  Viðmið - breakpoints 60em = 960px +
+  ======================================== */
+  @media screen and (min-width:60em) {
+    .main {
+      display: grid;
+      grid-template-areas:
+      "vinstri midja haegri";
+      grid-auto-columns: 1fr 3fr 1fr;
+  }
+  .myndabox {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} 
+  /* ========================================
+  Viðmið - breakpoints 80em = 1280px +
+  ======================================== */
+
+  @media screen and (min-width:80em) {
+    .body {
+      max-width: 80em;
+      margin:0 auto;
+    }
+  }
