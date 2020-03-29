@@ -1,0 +1,14 @@
+.hringur {
+    display:block ;
+    
+
+    padding-bottom: 13em;
+    border: 2px solid blue;
+    color:black;
+    font-size: 2em;
+    width:20em;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: cyan;
+}
