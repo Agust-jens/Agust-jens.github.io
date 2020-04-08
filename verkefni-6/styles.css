@@ -1,0 +1,196 @@
+html{
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+header h1{
+    font-size: 3em;
+    margin: .5em 0;
+    text-align: left;
+}
+body{
+
+    background: blue;
+    color:black;
+    font: 400 1em/1.5 'poppins';
+    margin: 0;
+}
+.verkefni{
+    text-align: right;
+    margin-top: 2em;
+    padding-right: 5em;
+    color: black;
+}
+.hringur{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    width: 40em;
+    height: 40em;
+    background: wheat;
+}
+h1{
+    font-family: 'Fredericka the Great';
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 30px;
+}
+h2, h3, h4{
+    font-family: 'Fredericka the Great';
+}
+.container{
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 0;
+    max-width: 60em;
+}
+.midjunni {
+    background: wheat;
+    padding: 1em;
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+}
+.textbox {
+    padding: 20px;
+    background-color: wheat;
+}
+
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    color: blue;
+}
+.col-3 a{
+    color: blue;
+}
+.col-3 a:hover {
+    background-color: wheat;
+    color: blue;
+}
+.col-4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.nobullet{
+    list-style:none;
+}
+.gap {
+    grid-gap: 4em;
+}
+.textcolor{
+    color: white;
+    margin-top: 5em;
+}
+.textcolor a{
+    color: wheat;
+}
+.textcolor a:active, a:hover {
+    color: blue;
+}
+.forsida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 1em;
+}
+.hringur h1{
+    font-family: 'Fredericka the Great';
+    font-size: 5em;
+    line-height: 1;
+    margin: 1em 0 0 0;
+}
+.blockqoute{
+    background: blue;
+    color: white;
+    font-size: 1,5em;
+    border-radius: 10px;
+}
+.margintop {
+    font-size: 2.5em;
+}
+.frikka{
+    display: grid;
+    border: 0;
+    margin-bottom: 2em;
+}
+.frikka h1{
+    font-family: 'Fredericka the Great';
+    font-size: 6em;
+    margin: 0;
+    text-align: center;
+}
+.takki{
+    display: block;
+    width: 8em;
+    margin: -3.8em auto 0 auto;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: .4em;
+    padding: .5em;
+    background-color: wheat;
+}
+.takki a:active, a:hover {
+    background-color: blue;
+}
+.topbutton{
+    background-color: wheat;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+    border: 2px solid blue;
+    color: blue;
+    font-size: 2em;
+    display: block;
+    margin: auto;
+    width: 2em;
+}
+.topbutt:active, .topbutt:hover{
+    background-color: blue;
+    color: #e6e600;
+}
+.copy{
+    text-align: center;
+    color: #AAB197;
+}
+@media screen and (min-width: 60em) {
+    .container{
+        max-width: 60em;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 3em;
+        margin: .5em 0;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .topnav a{
+        margin-top: 7em;
+        display: flex;
+    }
+
+    .verkefni{
+        text-align: right;
+    }
+
+    .gap {
+        grid-gap: 3em
+    }
+}
