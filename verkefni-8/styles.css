@@ -1,0 +1,87 @@
+html{
+    scroll-behavior: smooth;
+}
+.header {
+    display: block;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.verkefni{
+    text-align: right;
+    margin-top: 2em;
+    padding-right: 5em;
+    color: white;
+}
+body {
+    background-image: url('rainbowsixsiegebakgrunnur.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 1em;
+    font-size: 20px;
+    background-position: center;
+    color: white;
+  }
+
+.midjunni {
+    padding: 1em;
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+}
+.margintop {
+    font-size: 2.5em;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn {
+    border: 2em;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.innermenu {
+    display: flex;
+    justify-content: center;
+}
+.innermenu a {
+    color: white;
+    background-color: black;
+    padding: .5em 2em;
+    text-decoration: none;
+    border-right: 1px solid;
+    font-size: 20px;
+}
+.founder {
+    margin: 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.yellow {
+    color: gold;
+    font-size: 2.5em;
+    margin-bottom: auto;
+}
