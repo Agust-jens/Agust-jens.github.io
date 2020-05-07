@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+}
+.header {
+    display: block;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.verkefni{
+    text-align: right;
+    margin-top: 2em;
+    padding-right: 5em;
+    color: white;
+}
+body {
+    background-image: url('rainbowsixsiegebakgrunnur.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 1em;
+    font-size: 20px;
+    background-position: center;
+    color:white;
+    font-family: 'righteous';
+  }
+
+.midjunni {
+    padding: 1em;
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    background-color: rgba(104, 104, 104, 0.7);
+}
+.margintop {
+    font-size: 2.5em;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn {
+    border: 2em;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.innermenu {
+    display: flex;
+    justify-content: center;
+}
+.innermenu a {
+    color: white;
+    background-color: black;
+    padding: .5em 2em;
+    text-decoration: none;
+    border-right: 1px solid;
+    font-size: 20px;
+}
+.founder {
+    margin: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.yellow {
+    color: gold;
+    font-size: 2.5em;
+    margin-bottom: auto;
+}
+.takki {
+    display: block;
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    padding-bottom: 0.2em;
+    border: 2px solid black;
+    color: black;
+    font-size: 2em;
+    width: 1.5em;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+}
+.ja {
+    text-align: center;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    color: black;
+}
+.col-3 a{
+    color: black;
+}
+.col-3 a:hover {
+    background-color: gray;
+    color: black;
+}
+.nobullet{
+    list-style:none;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    body {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+  }
