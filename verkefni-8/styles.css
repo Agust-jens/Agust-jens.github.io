@@ -123,11 +123,28 @@ body {
 .nobullet{
     list-style:none;
 }
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    body {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    
+@media screen and (max-width:959px) {
+    .innermenu {
+        float: left;
+    }
+    .innermenu a {
+        padding-left: 10px;
+    }
+    img {
+        width: 55%;
+    }
+    iframe {
+        width: 70%;
+        float: left;
+    }
+    main {
+        float: left;
+        padding-right: 500px;
+    }
+    .takki {
+        left: 12em;
+    }
+    .footer {
+        float: left;
+    }
   }
